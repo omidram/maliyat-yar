@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-vazir);
+}
+
+body {
+  font-family: var(--font-vazir), Vazirmatn, Tahoma, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+@media print {
+  header,
+  aside,
+  nav {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+}
